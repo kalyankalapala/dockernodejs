@@ -1,5 +1,5 @@
 ##DockerFile
-FROM node:10-alpine
+FROM 850769113977.dkr.ecr.us-east-1.amazonaws.com/cloudavengersecr
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
