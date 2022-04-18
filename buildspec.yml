@@ -18,7 +18,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker login -u kalyankalapala -p 5083a868-77da-45df-831c-6d3078300ec9
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      #- docker login -u kalyankalapala -p 5083a868-77da-45df-831c-6d3078300ec9
       - docker push kalyankalapala/cloudavengers:latest
       #- docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
       #- echo Writing image definitions file...

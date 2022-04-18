@@ -14,11 +14,11 @@ docker-compose --version
 
 #### docker-compose up ####
 cd /home/ec2-user/dockernodejs
-#sudo docker-compose down
-#sudo docker rmi -f docker-nodejs
-#sudo docker-compose up -d
+sudo docker-compose down
+sudo docker rmi -f docker-nodejs
+sudo docker-compose up -d
 sudo docker pull kalyankalapala/cloudavengers:latest
-sudo docker run -it -d -p 80:8080 kalyankalapala/cloudavengers:latest
+#sudo docker run -it -d -p 80:8080 kalyankalapala/cloudavengers:latest
 ### ghost ###
 #sudo docker run -d -p 3001:2368 ghost
 #systemctl restart nginx
